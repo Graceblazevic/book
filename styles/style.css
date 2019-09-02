@@ -7,4 +7,41 @@
 body {
   background: white;
   color: black;
+  background-image: url("../assets/moving-wave.gif");
+  background-size: cover;
+
+
+}
+
+.ws-page {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ws-cloudes-container {
+  width: 100%;
+  top: 0px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+.ws-cloudes {
+  width: 33.33%;
+  float: left;
+}
+
+.ws-wave-container {
+width: 100%;
+bottom: 0px:
+position: relative;
+overflow: hidden;
+align-items: center;
+
+}
+
+.ws-waves {
+  float: left;
+  width: 100%;
 }
