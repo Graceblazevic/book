@@ -3,13 +3,16 @@
   [property]: [value];
 }
 
-/* Global Styles go here */
+img {
+  width: 100%;
+}
+
 body {
   background: white;
   color: black;
   background-image: url("../assets/moving-wave.gif");
   background-size: cover;
-
+  width: 100%;
 
 }
 
@@ -19,29 +22,48 @@ body {
   overflow: hidden;
 }
 
-.ws-cloudes-container {
+.ws-clouds-container {
   width: 100%;
   top: 0px;
   position: relative;
   overflow: hidden;
   align-items: center;
+  min-height: 50vh;
 }
 
-.ws-cloudes {
-  width: 33.33%;
+.ws-cloud {
+  width: 30%;
   float: left;
 }
 
-.ws-wave-container {
+.ws-waves-container {
 width: 100%;
 bottom: 0px:
 position: relative;
 overflow: hidden;
 align-items: center;
-
+min-height: 50vh;
 }
 
-.ws-waves {
+.ws-wave {
+  width: 50%;
+}
+
+.ws-wave--small {
+  width: 30%;
+}
+
+.ws-wave--med {
+  width: 40%
+}
+
+.ws-wave--big {
+  width: 80%;
+}
+.ws-wave--right {
+  float: right;
+}
+
+.ws-wave--left {
   float: left;
-  width: 100%;
 }
