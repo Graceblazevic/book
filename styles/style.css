@@ -16,6 +16,11 @@ body {
 
 }
 
+body {
+  cursor: url("../assets/fish.png") 0 0, pointer;
+
+}
+
 .ws-page {
   width: 100%;
   position: relative;
@@ -126,18 +131,15 @@ width: 30%;
 #mydiv {
   position: absolute;
   z-index: 9;
-  text-align: center;
-  width: 50%;
-  /* border: 0.5px solid ;  */
+  /* border: 0.5px solid #ffffff; */
 }
 
 #mydivheader {
-  padding: 2px;
-  cursor: move;
-  z-index: 10;
-  width: 50%;
-
+  padding: 1px;
+  cursor: url("../assets/fish2.png") 0 0, pointer;
+  z-index: 5;
 }
+
 
 
 
