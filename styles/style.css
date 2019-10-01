@@ -81,15 +81,15 @@ min-height: 50vh;
   float: left;
 }
 
-/* .ws-wave--right:hover {
+.ws-wave--right:hover {
 animation: shake 0.1s infinite;
 }
 .ws-wave--left:hover {
 animation: shake 0.1s infinite;
-} */
+}
+
 
 .ws-turtle-container {
-
 }
 
 .ws-turtle1 {
@@ -98,6 +98,7 @@ animation: shake 0.1s infinite;
 }
 
 .ws-penguin-container {
+  width: 100%;
 }
 
 .ws-peng {
@@ -106,13 +107,10 @@ animation: shake 0.1s infinite;
   z-index: 100;
 }
 
-.ws-peng:hover {
-  animation: shake 0.3s infinite;
-}
+/* .ws-peng:hover {
+  animation: shake 40%;
+} */
 
-.ws-peng {
-width: ;
-}
 
 .ws-diver-container {
 }
@@ -121,12 +119,17 @@ width: ;
 width: 30%;
 }
 
-/* .ws-stat-container {
+
+
+.ws-stat-container {
+
 }
 
 .ws-stat1 {
 width: 30%;
-} */
+}
+
+
 
 #mydiv {
   position: absolute;
@@ -140,7 +143,31 @@ width: 30%;
   z-index: 5;
 }
 
+#my {
+  position: absolute;
+  z-index: 9;
+}
 
+#mymover {
+  padding: 1px;
+  cursor: url("../assets/fish2.png") 0 0, pointer;
+  z-index: 5;
+  width: 35%;
+}
+
+#myp {
+  position: absolute;
+  z-index: 9;
+}
+
+#moverp {
+  padding: 1px;
+  cursor: url("../assets/fish2.png") 0 0, pointer;
+  z-index: 5;
+  width: 40%;
+  float: right;
+  z-index: 100;
+}
 
 
 @keyframes shake {

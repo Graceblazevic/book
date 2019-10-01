@@ -24,6 +24,8 @@
   </div>
 
 
+
+
 <div class="ws-crane-container">
     <!-- <div class="ws-crane1"> <img src="assets/crane2.png"> -->
   </div>
@@ -31,6 +33,9 @@
     <div id="mydivheader"><img src="assets/crane2.png"></div>
   </div>
 </div>
+
+
+
 
   <div class="ws-waves-container">
     <div class="ws-wave ws-wave--small ws-wave--left">
@@ -45,6 +50,8 @@
   </div>
 
 
+
+
   <div class="ws-turtle-container">
     <div class="ws-turtle1">
       <img src="assets/turtle.gif">
@@ -52,11 +59,16 @@
   </div>
 
 
+
+
   <div class="ws-penguin-container">
-    <div class="ws-peng">
-      <img src="assets/penguan.gif">
-    </div>
+    <div class="ws-peng"></div>
+      <div id="myp">
+        <div id="moverp"><img src="assets/penguan.gif"></div>
+      </div>
   </div>
+
+
 
 
   <div class="ws-diver-container">
@@ -68,16 +80,21 @@
   </div>
 
 
-  <!-- <div class="ws-stat-container">
-    <div class="ws-stat1">
-      <img src="assets/stat.png">
-    </div>
-  </div>  -->
 
 
-  <div id="mydiv">
+  <div class="ws-stat-container">
+    <div class="ws-stat1"> </div>
+        <div id="my">
+          <div id="mymover"><img src="assets/stat.png"></div>
+        </div>
+  </div>
+
+
+
+
+  <!-- <div id="mydiv">
     <div id="mydivheader"><img src="assets/stat.png"></div>
-  </div> 
+  </div> -->
 
   <script>
   //Make the DIV element draggagle:
@@ -125,8 +142,101 @@
   }
   </script>
 
+<!-- /// new one for stat//// -->
 
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("my"));
 
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "mover")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "mover").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<!-- /// new one for peng//// -->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myp"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "moverp")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "moverp").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
 
 
 
