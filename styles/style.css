@@ -125,7 +125,7 @@ animation: shake 0.1s infinite;
   75% {
     margin-left: 50vw;
     margin-top: 15%;
-    transform: rotate(25deg) scaleX(-1);
+    transform: rotate(-25deg) scaleX(-1);
   }
 
   100% {
