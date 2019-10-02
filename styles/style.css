@@ -90,6 +90,38 @@ animation: shake 0.1s infinite;
 
 .ws-turtle1 {
   width: 30%;
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  /* // Change animation time for the turtle to change speed */
+  animation: swimming-turtle 6s infinite;
+}
+
+@keyframes swimming-turtle {
+  0% {
+    margin-left: -30vw;
+    margin-top: 0;
+  }
+
+  25% {
+    margin-left: 50vw;
+    margin-top: 20%;
+  }
+
+  50% {
+    margin-left: 120vw;
+    margin-top: 10%;
+  }
+
+  75% {
+    margin-left: 50vw;
+    margin-top: 15%;
+  }
+
+  100% {
+    margin-left: -30vw;
+    margin-top: 0;
+  }
 }
 
 .ws-penguin-container {
