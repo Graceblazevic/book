@@ -13,6 +13,7 @@ body {
   background-image: url("../assets/moving-wave.gif");
   background-size: cover;
   width: 100%;
+  background-repeat: no-repeat;
 
 }
 
@@ -88,13 +89,51 @@ animation: shake 0.1s infinite;
 animation: shake 0.1s infinite;
 }
 
-
-.ws-turtle-container {
-}
-
 .ws-turtle1 {
   width: 30%;
-  float:;
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  /* // Change animation time for the turtle to change speed */
+  animation: swimming-turtle 6s infinite;
+}
+
+
+/* Change the rotation to make the turtle swim in the right direction  */
+@keyframes swimming-turtle {
+  0% {
+    margin-left: -30vw;
+    margin-top: 0;
+    transform: rotate(25deg) scaleX(1);
+  }
+
+  25% {
+    margin-left: 50vw;
+    margin-top: 20%;
+    transform: rotate(25deg) scaleX(1);
+  }
+
+  50% {
+    margin-left: 120vw;
+    margin-top: 10%;
+    transform: rotate(0deg) scaleX(1);
+  }
+
+  51% {
+    transform: rotate(0deg) scaleX(-1);
+  }
+
+  75% {
+    margin-left: 50vw;
+    margin-top: 15%;
+    transform: rotate(-25deg) scaleX(-1);
+  }
+
+  100% {
+    margin-left: -30vw;
+    margin-top: 0;
+    transform: rotate(0deg) scaleX(-1);
+  }
 }
 
 .ws-penguin-container {
@@ -168,7 +207,6 @@ width: 30%;
   float: right;
   z-index: 100;
 }
-
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
