@@ -13,6 +13,10 @@
 
 <body>
 
+<audio src=".mp3" controls autoplay loop></audio>
+
+
+
 <div>
   <div class="ws-clouds-container">
     <div class="ws-cloud">
@@ -50,9 +54,15 @@
 <div class="ws-stat-container">
   <div class="ws-stat1"> </div>
   <div id="my" class="draggy">
-    <div id="mymover"><img src="assets/stat.png"></div>
+    <div id="mymover">
+      <img class="man" src="assets/stat.png">
+      <div class="info_text">
+          Grace Blazevic ashsdn sjadnsajds ajsdna
+      </div>
+    </div>
   </div>
 </div>
+
 
 <div class="ws-turtle1">
   <img src="assets/turtle.gif">
@@ -61,10 +71,15 @@
 <div class="ws-penguin-container">
   <div class="ws-peng"></div>
     <div id="myp" class="draggy">
-      <div id="moverp"><img src="assets/penguin.gif"></div>
+      <div id="moverp">
+        <img src="assets/penguin.gif"></div>
     </div>
 </div>
-
+<!-- <div class="ws-penguin-container">
+  <div class="ws-peng"></div>
+      <div <img src="assets/penguin.gif"></div>
+    </div>
+</div> -->
 
 <div class="ws-diver-container">
   <marquee behavior="scroll" direction="right">
@@ -73,6 +88,8 @@
     </div>
   </marquee>
 </div>
+
+
 
 <!-- <div class="ws-stat-container">
   <div class="ws-stat1"> </div>
@@ -83,5 +100,10 @@
 
   </div>
   <script src="./js/book.js"></script>
+  <script>
+    $(".man").click(function(){
+      $(".info_text").toggleClass("visible");
+    });
+  </script>
 </body>
 </html>

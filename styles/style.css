@@ -22,6 +22,9 @@ body {
 
 }
 
+
+
+
 .ws-page {
   width: 100%;
   position: relative;
@@ -161,8 +164,11 @@ width: 30%;
 
 
 .ws-stat-container {
-
+  width: 400px;
+  height: 400px;
 }
+
+
 
 .ws-stat1 {
 width: 30%;
@@ -192,6 +198,24 @@ width: 30%;
   cursor: url("../assets/fish2.png") 0 0, pointer;
   z-index: 5;
   width: 35%;
+  display: flex;
+  flex-direction: row;
+}
+
+.info_text {
+  margin-top:-2cm;
+  visibility:hidden;
+  font-size: 10px;
+  font-family: times;
+
+}
+
+.visible {
+  visibility: visible;
+}
+
+.man {
+  z-index: 999;
 }
 
 #myp {
