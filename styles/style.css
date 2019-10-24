@@ -158,7 +158,7 @@ animation: shake 0.1s infinite;
 }
 
 .ws-dive {
-width: 30%;
+width: 20%;
 }
 
 
@@ -205,8 +205,9 @@ width: 30%;
 .info_text {
   margin-top:-2cm;
   visibility:hidden;
-  font-size: 10px;
-  font-family: times;
+  font-size: 12px;
+  font-family: times bold;
+  color: yellow;
 
 }
 
