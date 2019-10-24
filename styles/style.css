@@ -199,9 +199,10 @@ width: 30%;
 .info_text {
   margin-top:-2cm;
   visibility:hidden;
-  font-size: 14px;
-  font-family: times;
+  font-size: 22px;
+  font-family: arial;
   color: white;
+  font-weight: 200;
 }
 
 a {
@@ -248,7 +249,7 @@ a {
 
 
 
- @media only screen and (max-width: 420px) {
+ /* @media only screen and (max-width: 415px) {
 
    .ws-stat-container {
      width: 200px;
@@ -259,4 +260,24 @@ a {
    width: 20%;
    }
 
-}
+   .info_text {
+     margin-top:-2cm;
+     visibility:hidden;
+     font-size: 14px;
+     font-family: times;
+     color: white;
+   }
+
+   a {
+     color: white
+
+   }
+
+   .visible {
+     visibility: visible;
+   }
+
+   .man {
+     z-index: 999;
+   }
+} */
