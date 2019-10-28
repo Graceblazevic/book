@@ -171,7 +171,17 @@ width: 30%;
 width: 30%;
 }
 
+.ws-name {
+  font-size: 15px;
+  font-family: arial;
+  color: white;
+  font-weight: 200;
+  text-decoration: none;
+}
 
+a:hover {
+  color: blue;
+}
 
 #mydiv {
   position: absolute;
@@ -202,7 +212,7 @@ width: 30%;
 .info_text {
   margin-top:-2cm;
   visibility:hidden;
-  font-size: 22px;
+  font-size: 15px;
   font-family: arial;
   color: white;
   font-weight: 200;
